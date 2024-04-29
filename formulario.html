@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulário de Pesquisa</title>
+        <style> /** Obs: essa estilização é só para deixar o exercicio com uma aparencia melhor, como a proposta não pede css não utilizei links stylesheet pois fiz apenas algumas leves adaptações**/
+            main{
+                margin: 0 auto;
+                width: 90%;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <h1>Formulário Pesquisa de Satisfação</h1>
+            <form method="post" action="processar-pesuisa.html">
+                <div>
+                    <h2>Dados Pessoais</h2>
+                    <p>
+                        <label for="name">Nome</label>
+                    </p>
+                    <input type="text" id="name" placeholder="Seu Nome"/> 
+                    <p>
+                        <label for="email">Email</label>
+                    </p>
+                    <p>
+                        <input type="e-mail" id="email" placeholder="Seu Melhor Email" />
+                    </p>
+                    <p>
+                        <label for="numberphone">Telefone</label>
+                    </p>
+                    <p>
+                        <input type="tel" placeholder="99 99999 9999"/>
+                    </p>
+                </div>
+                <div>
+                    <h2>Dados de Pesquisa</h2>
+                    <p>
+                        Em uma escala de 1 a 5, indique o nível de atendimento prestado:
+                    </p>
+                    <p>
+                        <input type="radio" id="1" name="nivel"/>
+                        <label for="1">1</label>
+                        <input type="radio" id="2" name="nivel"/>
+                        <label for="2">2</label>
+                        <input type="radio" id="3" name="nivel"/>
+                        <label for="3">3</label>
+                        <input type="radio" id="4" name="nivel"/>
+                        <label for="4">4</label>
+                        <input type="radio" id="5" name="nivel"/>
+                        <label for="5">5</label>
+                    </p>
+                    <p>
+                        Em uma escala de 1 a 5, indique o quanto seu problema foi resolvido:
+                    </p>
+                    <p>
+                        <input type="radio" id="1" name="nivel-p"/>
+                        <label for="1">1</label>
+                        <input type="radio" id="2" name="nivel-p"/>
+                        <label for="2">2</label>
+                        <input type="radio" id="3" name="nivel-p"/>
+                        <label for="3">3</label>
+                        <input type="radio" id="4" name="nivel-p"/>
+                        <label for="4">4</label>
+                        <input type="radio" id="5" name="nivel-p"/>
+                        <label for="5">5</label>
+                    </p>
+                    <p>
+                        <label>Departamento de atendiento</label>
+                        <select>
+                            <option>Marketing</option>
+                            <option>Financeiro</option>
+                            <optiom>Comercial</optiom>
+                            <option>Logistíca</option>
+                            <option>Recursos Humanos</option>
+                        </select>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="data-share" />
+                        <label for="data-share">Autorizo o compartilhamento de dados com terceiros</label>
+                    </p>
+                </div>
+                <input type="submit" value="Enviar" />
+            </form>
+         </main>
+    </body>
+</html>
