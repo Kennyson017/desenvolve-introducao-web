@@ -175,3 +175,56 @@ a:hover {
     border-bottom: #001030 solid 1px;
     padding-bottom: 0.5em;
 }
+
+/* Exercícios - Media query */
+
+@media screen and (max-width: 768px) {
+    .design-selection {
+        position: static;
+        width: 100%;
+    }
+    
+    .explanation {
+        border-right: none;
+        width: 100%;
+    }
+
+    #zen-intro {
+        height: auto;
+    }
+
+    .participation {
+        flex-direction: column;
+    }
+
+    p {
+        text-indent: 0;
+    }
+
+    .benefits {
+        flex-direction: column-reverse;
+    }
+
+}
+
+@media print {
+    
+    html{
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    #zen-intro header {
+        background-color: #CEDEF2; 
+        color: #002f8d;
+    }
+
+    .design-selection {
+        position: static;
+        width: 100%;
+    }
+    
+    .explanation {
+        border-right: none;
+        width: 100%;
+    }
+}
