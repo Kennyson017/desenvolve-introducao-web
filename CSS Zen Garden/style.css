@@ -98,7 +98,7 @@ a{
 
 .design-selection {
     position: absolute;
-    top: 520px;
+    top: 420px;
     left: 62%;
     padding: 0 2%;
 }
@@ -111,7 +111,7 @@ a{
     gap: 2em;
 }
 
-a {
+.supporting footer a {
     flex-grow: 1;   
 }
 
@@ -143,4 +143,35 @@ a {
 
 .participation h3 {
     align-self: center;
+}
+
+/* Exercícios - Pseudo classes */
+
+a {
+    color: rgb(212, 0, 0);
+    font-weight: bold;
+}
+
+a:visited {
+    font-weight: normal;
+}
+
+a:hover {
+    color: rgba(212, 0, 0, 0.5);
+}
+
+.main p:first-of-type::first-letter {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3em;
+    float: left;
+}
+
+.design-selection li {
+    border-top: #001030 solid 1px;
+    padding-top: 0.5em;
+}
+
+.design-selection li:last-of-type {
+    border-bottom: #001030 solid 1px;
+    padding-bottom: 0.5em;
 }
