@@ -1,3 +1,23 @@
+/* Exercícios - Estilização textual */
+
+p { text-indent: 1em; }
+
+h1, h2, h3 { text-align: center; }
+
+h1 { font-size: 1.8rem; }
+
+h2 { font-size: 1.4rem; }
+
+h3{ font-size: 1.2rem; }
+
+.summary {text-align: center;}
+
+.main p {line-height: 1.5;}
+
+abbr {font-variant: small-caps;}
+
+
+/* Exercícios - Box Model */
 
 .main footer {
     margin: 4%;
@@ -25,7 +45,7 @@ aside ul li {
 
 .page-wrapper {
     width: 80%;
-    max-width: 1140px;
+    max-width: 1280px;
     margin: auto;
 }
 
@@ -41,8 +61,8 @@ html{
     background-color: #CEDEF2;
     color: #002f8d;
 
-    font-size: 18px;
-    font-family: 'helvetica', sans-serif;
+    font-size: 18px; /* Exercícios - Estilização textual */
+    font-family: 'helvetica', sans-serif; /* Exercícios - Estilização textual */
 }
 
 header {
@@ -63,20 +83,22 @@ a{
     color: rgb(212, 0, 0);
 }
 
-p {
-    text-indent: 1em;
+/* Exercícios - Posicionamento */
+
+.page-wrapper {
+    position: relative;
 }
 
-h1, h2, h3 { text-align: center; }
+.explanation {
+    width: 60%;
+    margin-right: 35%;
+    border-right: #1f295c solid 1px;
+    padding-right: 2%;
+}
 
-h1 { font-size: 1.8rem; }
-
-h2 { font-size: 1.4rem; }
-
-h3{ font-size: 1.2rem; }
-
-.summary {text-align: center;}
-
-.main p {line-height: 1.5;}
-
-abbr {font-variant: small-caps;}
+.design-selection {
+    position: absolute;
+    top: 560px;
+    left: 62%;
+    padding: 0 2%;
+}
